@@ -1,0 +1,69 @@
+GET http://localhost:8888/api/demo
+
+###
+POST http://localhost:8888/api/register
+Content-Type: application/json
+
+{
+    "firstname": "Bob",
+    "lastname": "C",
+    "email": "bobc@gmail.com",
+    "password": "lmao",
+    "university": "MIT"
+}
+
+###
+GET http://localhost:8888/api/whoami
+
+###
+POST http://localhost:8888/api/login
+Content-Type: application/json
+
+{
+    "email": "tasmeemreza@gmail.com",
+    "password": "lmao"
+} 
+
+
+###
+POST http://localhost:8888/api/playnow 
+Content-Type: application/json
+
+{
+    "sports": ["basketball", "volleyball", "soccer", "football"],
+    "fields": ["field1", "field2", "field3"]
+}
+###
+POST http://localhost:8888/api/playlater 
+Content-Type: application/json
+
+{
+    "sports": ["Basketball", "Volleyball"],
+    "fields": ["field1", "field2", "field3"],
+    "times": [3,5,7,42,69,420]
+}
+
+###
+POST http://localhost:8888/api/getuniversitydetails
+Content-Type: application/json
+
+{
+    "university": "Harvard University"
+}
+
+
+###
+POST http://localhost:8888/api/login
+Content-Type: application/json
+
+{
+    "email": "tasmeemreza@gmail.com",
+    "password": "lmao"
+} 
+
+###
+GET http://localhost:8888/api/getteams
+
+
+###
+GET http://localhost:8888/api/getrowmajor
